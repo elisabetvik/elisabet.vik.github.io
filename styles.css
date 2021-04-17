@@ -5,7 +5,8 @@ body {
 }
  /* Header */
 header {
-    background-color: lightgrey;
+    background-color: RGB(117,175,195);
+    color: white;
     padding-top: 3%;
     padding-bottom: 1%;
     font-size: 20px;
@@ -41,7 +42,11 @@ p {
     width: 80%;
 }
 
-img {
+img.lite_bilete {
     width: 50%;
     border-radius: 50%;
+}
+
+img.stort_bilete {
+    width: 100vw;
 }
