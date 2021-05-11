@@ -4,31 +4,53 @@ body {
     font-family: "Tahoma";
     color: black;
     margin: 0;
+    background-color:  RGB(10,10,10);
 }
  /* Header */
 header {
-    background-color: RGB(117,175,195);
+    background-color: RGB(169, 144, 120);
     padding-bottom: 1%;
     font-size: 20px;
+    font-family: "Andale Mono";
+
 }
 
-/* Headings */
+.headerItems {
+    justify-content: right;
+}
+
+.headerItems.nav-link {
+    color: black;
+}
+
+
 h1 {
     padding-left: 10%;
     padding-top: 25px;
     padding-bottom: 2px;
 }
 
-h3 {
-    padding-top: -2%;
-    padding-left: 20%;
-    padding-right: 10%;
+a {
+    text-decoration: none;
+    color: gray;
 }
 
 /* Create two columns/boxes that floats next to each other */
-article {
-    float: left;
+.halvt_bilete {
+    display: flex;
     width: 50%;
+    margin: 0;
+}
+
+.bilete_tekst {
+    font-family: "Andale Mono";
+    background-color: RGB(10,10,10);
+    color: gray;
+    font-weight: "bold";
+    text-align: center;
+    font-size: 70px;
+    text-decoration: none;
+    padding: 25%;
 }
 
 article.contacts {
