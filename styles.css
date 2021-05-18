@@ -45,7 +45,6 @@ a {
 .bilete_tekst {
     font-family: "Andale Mono";
     background-color: RGB(10,10,10);
-    background-color: RGB(10,10,10);
     color: gray;
     font-weight: "bold";
     font-size: 70px;
@@ -55,6 +54,15 @@ a {
     width: 50%;
     padding-left: 25%;
     padding-right: 25%;
+}
+
+.display-container {
+}
+
+.w3-button {
+    padding: 20px;
+    opacity: 80%;
+    margin-right: 10px;
 }
 
 article.contacts {
