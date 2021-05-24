@@ -61,14 +61,17 @@
 
 <script>
     var slideIndex = 1;
-    showDivs(slideIndex);
+    showDivs(slideIndex, 1);
+    showDivs(slideIndex, 2);
+    showDivs(slideIndex, 3);
+    showDivs(slideIndex, 4);
 
     function plusDivs(n, divNumber) {
       showDivs(slideIndex += n, divNumber);
     }
 
     function showDivs(n, divNumber) {
-        console.log("mySlides" + divNumber)
+      console.log("mySlides" + divNumber)
       var i;
       var x = document.getElementsByClassName("mySlides" + divNumber);
       if (n > x.length) {slideIndex = 1}
@@ -76,7 +79,7 @@
       for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
       }
-      x[slideIndex-1].style.display = "block";
+      x[slideIndex - 1].style.display = "block";
     }
 </script>
 
