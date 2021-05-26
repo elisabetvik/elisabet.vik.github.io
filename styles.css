@@ -51,7 +51,7 @@ header h1 {
 
 .halvt_bilete img {
     display: none;
-    max-width: 45%;
+    max-width: 65%;
     height: auto;
 }
 
@@ -59,6 +59,7 @@ header h1 {
     font-family: "Andale Mono";
     font-size: 40px;
     margin: auto;
+    background-color: white;
 }
 
 a {
