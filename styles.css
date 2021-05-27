@@ -45,13 +45,15 @@ header h1 {
 .halvt_bilete {
     display: flex;
     justify-content: space-around;
+    max-height: 25%;
     max-width: 50%;
     margin: 0 20% 0 20%;
 }
 
 .halvt_bilete img {
     display: none;
-    height: 25%;
+    max-width: 25%;
+    height: auto;
 }
 
 .bilete_tekst {
