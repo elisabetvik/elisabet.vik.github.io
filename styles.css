@@ -46,8 +46,8 @@ header h1 {
     display: flex;
     justify-content: space-around;
     max-height: 25%;
-    max-width: 50%;
-    margin: 0 15% 0 20%;
+    max-width: 60%;
+    margin: 0 15% 0 15%;
 }
 
 .halvt_bilete img {
