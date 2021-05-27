@@ -46,12 +46,14 @@ header h1 {
     display: flex;
     justify-content: space-around;
     max-height: 50%;
+    max-width: 50%;
     margin: 0 20% 0 20%;
 }
 
 .halvt_bilete img {
     display: none;
-    max-width: 45%;
+    max-width: 50%;
+    max-height: 50%;
 }
 
 .bilete_tekst {
