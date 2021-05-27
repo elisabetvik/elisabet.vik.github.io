@@ -7,7 +7,7 @@ body {
 }
  /* Header */
 header {
-    background-color: RGB(194, 172, 151, 0.35);
+    background-color: RGB(194, 172, 151, 0.55);
     padding: 0 2% 10px 2%;
     font-size: 20px;
     font-family: "Andale Mono";
