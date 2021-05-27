@@ -75,12 +75,20 @@
     <button onclick="plusDivs(1, 4)">&#10095;</button>
 </div>
 
+<div class="halvt_bilete">
+    <button onclick="plusDivs(-1, 5)">&#10094;</button>
+    <img class="mySlides5" src="media/Nettside tegninger/Trygve.jpeg">
+    <button onclick="plusDivs(1, 5)">&#10095;</button>
+    <h1 class="bilete_tekst" >Foto</h1>
+</div>
+
 <script>
     var slideIndex = 1;
     showDivs(slideIndex, 1);
     showDivs(slideIndex, 2);
     showDivs(slideIndex, 3);
     showDivs(slideIndex, 4);
+    showDivs(slideIndex, 5);
 
     function plusDivs(n, divNumber) {
       showDivs(slideIndex += n, divNumber);
