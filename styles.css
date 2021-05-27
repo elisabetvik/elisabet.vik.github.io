@@ -52,8 +52,8 @@ header h1 {
 
 .halvt_bilete img {
     display: none;
-    max-width: 25%;
-    max-height: 25%;
+    width: 25%;
+    height: 25%;
 }
 
 .bilete_tekst {
