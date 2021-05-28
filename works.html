@@ -76,7 +76,7 @@
     <button onclick="plusDivs(1, 4)">&#10095;</button>
 </div>
 
-<div class="halvt_bilete" style="margin-bottom: 20%">
+<div class="halvt_bilete">
     <button onclick="plusDivs(-1, 5)">&#10094;</button>
     <img class="mySlides5" src="media/foto nettside/sittende.jpg">
     <img class="mySlides5" src="media/foto nettside/stol.jpg">
@@ -86,6 +86,18 @@
     <h1 class="bilete_tekst" >Fashion in Paper® </h1>
 </div>
 
+<div class="halvt_bilete" style="margin-bottom: 20%">
+    <h1 class="bilete_tekst" > Grafikk </h1>
+    <button onclick="plusDivs(-1, 6)">&#10094;</button>
+    <img class="mySlides6" src="media/Nettside grafikk/biesnitt.jpg">
+    <img class="mySlides6" src="media/Nettside grafikk/Gul diagonal.jpeg">
+    <img class="mySlides6" src="media/Nettside grafikk/Gul surr.jpeg">
+    <img class="mySlides6" src="media/Nettside grafikk/Gul vertikal.jpeg">
+    <img class="mySlides6" src="media/Nettside grafikk/langt_tre.jpg">
+    <img class="mySlides6" src="media/Nettside grafikk/Sirkler.jpeg">
+    <button onclick="plusDivs(1, 6)">&#10095;</button>
+</div>
+
 <script>
     var slideIndex = 1;
     showDivs(slideIndex, 1);
@@ -93,6 +105,7 @@
     showDivs(slideIndex, 3);
     showDivs(slideIndex, 4);
     showDivs(slideIndex, 5);
+    showDivs(slideIndex, 6);
 
     function plusDivs(n, divNumber) {
       showDivs(slideIndex += n, divNumber);
