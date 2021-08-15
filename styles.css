@@ -8,17 +8,9 @@ body {
  /* Header */
 .header {
     background-color: RGB(194, 172, 151, 0.55);
-    padding: 0 2% 10px 2%;
-    font-size: 20px;
+    font-size: 100%;
     font-family: "Andale Mono";
-    /* display: flex; */
-    /* justify-content: space-between; */
 }
-
-.header h1 {
-    padding-left: 8%;
-}
-
 
 .utstillingar {
     padding-left: 10%;
@@ -27,23 +19,11 @@ body {
     font-size: 30px;
 }
 
-/* .container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    opacity: 0.5;
-}
-
-.container img {
-    max-width: 100%;
-    min-height: 100%;
-} */
-
 .bilete_tekst {
     font-family: "Andale Mono";
     font-size: 40px;
     text-align: center;
+    padding-top: 50px;
 }
 
 .omtekst {
@@ -58,22 +38,9 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: inherit;
     color: RGB(10, 10, 10);
 }
-
-button {
-  cursor: pointer;
-  position: relative;
-  background-color: RGB(0,0,0,0.1);
-  border: 0;
-  width: auto;
-  padding: 1%;
-  color: white;
-  font-size: 18px;
-  user-select: none;
-}
-
 
 body {
     font-family: Trebuchet MS;
@@ -207,26 +174,10 @@ input:checked ~ .menu-content {
     opacity: 1;
   }
   
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
   /* The expanding image container (positioning is needed to position the close button and the text) */
   .container {
     position: relative;
     display: none;
-  }
-  
-  /* Expanding image text */
-  #imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
   }
   
   /* Closable button inside the image */
