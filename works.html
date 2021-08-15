@@ -5,7 +5,7 @@
     <title>Works by Elisabet</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
 
-    <style>
+    <style src="https://kit.fontawesome.com/cba2d24ed4.js" crossorigin="anonymous">
         body {
           background-image: url("media/bg.jpg");
           background-repeat: repeat;
@@ -14,54 +14,157 @@
 </head>
 <body>
 
-<header>
-    <h1 ><a style="color: black;" href="index.html">Elisabet Vik</a></h1>
-    <h1 ><a style="color: black;" href="mailto:kontakt@elisabetvik.no">kontakt@elisabetvik.no</a></h1>
-</header>
-
-<header >
-    <div style="display: block; padding-left: 8%; font-size: 30px;">
-        <a href="om.html">Om</a>
-        <a href="om.html"> | </a>
-        <a href="works.html">Arbeid</a>
-        <a href="om.html"> | </a>
-        <a href="utstillinger.html">Utstillinger</a>
+    <div class="row header">
+        <div class="col-1"></div>
+        <div class="col-3">
+            <h1 ><a style="color: black;" href="index.html">Elisabet Vik</a></h1>
+            <h1 ><a style="color: black;" href="mailto:kontakt@elisabetvik.no">kontakt@elisabetvik.no</a></h1>
+        </div>
+        <div class="col-3"></div>
+        <div class="collapsible-menu">
+            <input type="checkbox" id="menu">
+            <label for="menu" ><i class="fas fa-bars"></i></label>
+            <div class="menu-content">
+                <ul>
+                    <a href="om.html">Om</a>
+                    <a href="om.html"> | </a>
+                    <a href="works.html">Arbeid</a>
+                    <a href="om.html"> | </a>
+                    <a href="utstillinger.html">Utstillinger</a>
+                </ul>
+            </div>
+        </div>
     </div>
-</header>
 
-<div class="halvt_bilete">
-    <button onclick="plusDivs(-1, 3)">&#10094;</button>
-    <img class="mySlides3" src="media/Nettside maleri/Pauline liten.jpeg">
-    <img class="mySlides3" src="media/Nettside maleri/Sosai.jpeg">
-    <img class="mySlides3" src="media/Nettside maleri/Bente katter.jpeg">
-    <button class="w3-button" onclick="plusDivs(1, 3)">&#10095;</button>
-    <h1 class="bilete_tekst" >Olje</h1>
+
+    <!-- The expanding image container -->
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8 container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+        <!-- Expanded image -->
+        <img id="expandedImg2" style="width:100%">
+      
+        <!-- Image text -->
+        <div id="imgtext"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <h1 class="bilete_tekst">Olje</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8 bilete_row">
+        <div class="column">
+            <img src="media/Nettside maleri/Pauline liten.jpeg" style="width: 100%;" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="media/Nettside maleri/Sosai.jpeg" style="width: 100%;" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="media/Nettside maleri/Bente katter.jpeg" style="width: 100%;" onclick="myFunction(this);">
+        </div>
+    </div>
+</div>
+<!-- The expanding image container -->
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8 container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+      
+        <!-- Image text -->
+        <div id="imgtext"></div>
+    </div>
 </div>
 
-<div class="halvt_bilete">
-    <h1 class="bilete_tekst">Akryl</h1>
-    <button class="w3-button" onclick="plusDivs(-1, 1)">&#10094;</button>
-    <img class="mySlides1" src="media/Nettside maleri/Akrylmaleri i str .jpg">
-    <img class="mySlides1" src="media/Nettside maleri/sumphild.jpg" >
-    <img class="mySlides1" src="media/Nettside maleri/Film.jpeg" >
-    <img class="mySlides1" src="media/Nettside maleri/Fantasi.jpeg" >
-    <img class="mySlides1" src="media/Nettside maleri/blekksprut.jpeg" >
-    <button class="w3-button" onclick="plusDivs(1, 1)">&#10095;</button>
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <h1 class="bilete_tekst">Akryl</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8 bilete_row">
+        <div class="column">
+            <img src="media/Nettside maleri/Akrylmaleri i str .jpg" style="width: 100%;" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="media/Nettside maleri/sumphild.jpg" style="width: 100%;" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="media/Nettside maleri/Film.jpeg" style="width: 100%;" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="media/Nettside maleri/Fantasi.jpeg" style="width: 100%;" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="media/Nettside maleri/blekksprut.jpeg" style="width: 100%;" onclick="myFunction(this);">
+        </div>
+    </div>
 </div>
 
-<div class="halvt_bilete">
-    <button class="w3-button" onclick="plusDivs(-1, 2)">&#10094;</button>
-    <img class="mySlides2" src="media/Nettside skulptur/Natur.jpeg" >
-    <img class="mySlides2" src="media/Nettside skulptur/Hvit form.jpeg" >
-    <img class="mySlides2" src="media/Nettside skulptur/Keramikk hode.jpeg" >
-    <img class="mySlides2" src="media/Nettside skulptur/Knust kanne.jpeg" >
-    <img class="mySlides2" src="media/Nettside skulptur/fargede fingre.jpeg" >
-    <img class="mySlides2" src="media/Nettside skulptur/Rød kiste.jpeg" >
-    <button class="w3-button" onclick="plusDivs(1, 2)">&#10095;</button>
-    <h1 class="bilete_tekst" >Skulptur</h1>
+
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <h1 class="bilete_tekst">Skulptur</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8 bilete_row">
+        <div class="column">
+            <img class="mySlides2" src="" >
+            <img class="mySlides2" src="" >
+            <img class="mySlides2" src="" >
+            <img class="mySlides2" src="" >
+            <img class="mySlides2" src="" >
+            <img src="media/Nettside skulptur/Natur.jpeg" style="width: 100%;" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="media/Nettside skulptur/Hvit form.jpeg" style="width: 100%;" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="media/Nettside skulptur/Keramikk hode.jpeg" style="width: 100%;" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="media/Nettside skulptur/Knust kanne.jpeg" style="width: 100%;" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="media/Nettside skulptur/fargede fingre.jpeg" style="width: 100%;" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="media/Nettside skulptur/Rød kiste.jpeg" style="width: 100%;" onclick="myFunction(this);">
+        </div>
+    </div>
+</div>
+<!-- The expanding image container -->
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8 container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+        <!-- Expanded image -->
+        <img id="expandedImg2" style="width:100%">
+      
+        <!-- Image text -->
+        <div id="imgtext"></div>
+    </div>
 </div>
 
-<div class="halvt_bilete">
+
+<!-- <div class="halvt_bilete">
     <h1 class="bilete_tekst" >Tegninger</h1>
     <button onclick="plusDivs(-1, 4)">&#10094;</button>
     <img class="mySlides4" src="media/Nettside tegninger/Trygve.jpeg">
@@ -74,8 +177,8 @@
     <img class="mySlides4" src="media/Nettside tegninger/Sau.jpeg">
     <img class="mySlides4" src="media/Nettside tegninger/Øgler.jpeg">
     <button onclick="plusDivs(1, 4)">&#10095;</button>
-</div>
-
+</div> -->
+<!-- 
 <div class="halvt_bilete">
     <button onclick="plusDivs(-1, 5)">&#10094;</button>
     <img class="mySlides5" src="media/foto nettside/sittende.jpg">
@@ -84,9 +187,9 @@
     <img class="mySlides5" src="media/foto nettside/garn og hatt.jpg">
     <button onclick="plusDivs(1, 5)">&#10095;</button>
     <h1 class="bilete_tekst" >Fashion in Paper® </h1>
-</div>
+</div> -->
 
-<div class="halvt_bilete" style="margin-bottom: 20%">
+<!-- <div class="halvt_bilete" style="margin-bottom: 20%">
     <h1 class="bilete_tekst" > Grafikk </h1>
     <button onclick="plusDivs(-1, 6)">&#10094;</button>
     <img class="mySlides6" src="media/Nettside grafikk/nr1.jpeg">
@@ -99,65 +202,22 @@
     <img class="mySlides6" src="media/Nettside grafikk/nr8.jpeg">
     <img class="mySlides6" src="media/Nettside grafikk/nr9.jpeg">
     <button onclick="plusDivs(1, 6)">&#10095;</button>
-</div>
+</div> -->
 
 <script>
-    var slideIndex = 1;
-    showDivs(slideIndex, 1);
-    showDivs(slideIndex, 2);
-    showDivs(slideIndex, 3);
-    showDivs(slideIndex, 4);
-    showDivs(slideIndex, 5);
-    showDivs(slideIndex, 6);
-
-    function plusDivs(n, divNumber) {
-      showDivs(slideIndex += n, divNumber);
-    }
-
-    function showDivs(n, divNumber) {
-      console.log("mySlides" + divNumber)
-      var i;
-      var x = document.getElementsByClassName("mySlides" + divNumber);
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex - 1].style.display = "block";
-    }
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+} 
 </script>
-
-
-
-<!--<img class="stort_bilete" src="media/biesnitt.jpg" alt="Tresnitt med bier">-->
-
-
-<!--<article>-->
-<!--    <video style="display:inline;"  width="100%" autoplay muted loop>-->
-<!--      <source src="media/fjører.m4v" type="video/mp4">-->
-<!--    &lt;!&ndash;  <source src="movie.ogg" type="video/ogg">&ndash;&gt;-->
-<!--    Your browser does not support the video tag.-->
-<!--    </video>-->
-<!--    <div class="headerItems">-->
-<!--        <h3>-->
-<!--            <a href="https://elisabetvik.github.io/om.html" class="nav-link" >Om/About</a>-->
-<!--        </h3>-->
-<!--    </div>-->
-<!--</article>-->
-
-<!--<article>-->
-<!--    <video style="display:inline;"  width="100%" autoplay muted loop>-->
-<!--      <source src="media/fjører.m4v" type="video/mp4">-->
-<!--    &lt;!&ndash;  <source src="movie.ogg" type="video/ogg">&ndash;&gt;-->
-<!--    Your browser does not support the video tag.-->
-<!--    </video>-->
-<!--</article>-->
-<!--<article>-->
-<!--    <img class="halvt_bilete" src="media/ser_høgre.jpg" alt="Elisabet Vik">-->
-<!--</article>-->
-<!--<article>-->
-<!--    <img class="halvt_bilete" src="media/ser_venstre.jpg" alt="Elisabet Vik">-->
-<!--</article>-->
 
 
 </body>

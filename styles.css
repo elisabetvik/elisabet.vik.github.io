@@ -6,16 +6,16 @@ body {
     background-color: gray;
 }
  /* Header */
-header {
+.header {
     background-color: RGB(194, 172, 151, 0.55);
     padding: 0 2% 10px 2%;
     font-size: 20px;
     font-family: "Andale Mono";
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 
-header h1 {
+.header h1 {
     padding-left: 8%;
 }
 
@@ -27,8 +27,7 @@ header h1 {
     font-size: 30px;
 }
 
-
-.container {
+/* .container {
     position: absolute;
     left: 0;
     top: 0;
@@ -39,27 +38,12 @@ header h1 {
 .container img {
     max-width: 100%;
     min-height: 100%;
-}
-
-/* Create two columns/boxes that floats next to each other */
-.halvt_bilete {
-    display: flex;
-    justify-content: space-around;
-    max-height: 25%;
-    max-width: 60%;
-    margin: 0 15% 0 15%;
-}
-
-.halvt_bilete img {
-    display: none;
-    width: 46%;
-    height: 46%;
-}
+} */
 
 .bilete_tekst {
     font-family: "Andale Mono";
     font-size: 40px;
-    margin: auto;
+    text-align: center;
 }
 
 .omtekst {
@@ -89,3 +73,168 @@ button {
   font-size: 18px;
   user-select: none;
 }
+
+
+body {
+    font-family: Trebuchet MS;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    float: left;
+    /* border: 1px solid red; */
+    padding: 5px;
+  }
+
+@media only screen and (min-width: 1000px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+h6 {
+    font-size: 200%;
+    font-weight: normal;
+}
+
+a {
+    color: inherit;
+}
+
+p {
+    margin: 5px;
+    font-size: 25px;
+}
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+.collapsible-menu {
+
+}
+.collapsible-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.collapsible-menu a {
+    display:block;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+}
+.collapsible-menu label {
+    font-size: 80;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5%;
+}
+input#menu {
+    display: none;
+}
+input:checked ~ .menu-content {
+    max-height: 100%;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .menu-content {
+        max-height: 100%;
+        overflow: auto;
+        padding: 0;
+    }
+    .collapsible-menu {
+        display: flex;
+        border-bottom: none;
+        box-shadow: none;
+        padding: 2% 0 0 0;
+    }
+    .collapsible-menu ul {
+        list-style-type: none;
+        padding: 0;
+        display: inline-flex;        
+    }
+    .collapsible-menu a {
+        font-size: 35px;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .collapsible-menu label {
+        display: none;
+    }
+}
+/* Containter for the grid */
+.bilete_row {
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+ /* The grid: Four equal columns that floats next to each other */
+ .column {
+    float: left;
+    width: 15%;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  } 

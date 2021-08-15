@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Elisabet Vik</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <meta name="keywords" content="art, fine art, kunst, skulptur"/>
+    <meta name="description" content="Lokal kunstnar frå Haugalandet."/>
+    <script src="https://kit.fontawesome.com/cba2d24ed4.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -11,20 +14,28 @@
     <img src="media/Nettside maleri/solbriller.jpeg">
 </div>
 
-<header>
-    <h1 ><a style="color: black;" href="index.html">Elisabet Vik</a></h1>
-    <h1 ><a style="color: black;" href="mailto:kontakt@elisabetvik.no">kontakt@elisabetvik.no</a></h1>
-</header>
-
-<header >
-    <div style="display: block; padding-left: 8%; font-size: 30px;">
-        <a href="om.html">Om</a>
-        <a href="om.html"> | </a>
-        <a href="works.html">Arbeid</a>
-        <a href="om.html"> | </a>
-        <a href="utstillinger.html">Utstillinger</a>
+<div class="row header">
+    <div class="col-1"></div>
+    <div class="col-3">
+        <h1 ><a style="color: black;" href="index.html">Elisabet Vik</a></h1>
+        <h1 ><a style="color: black;" href="mailto:kontakt@elisabetvik.no">kontakt@elisabetvik.no</a></h1>
     </div>
-</header>
+    <div class="col-3"></div>
+    <div class="collapsible-menu">
+        <input type="checkbox" id="menu">
+        <label for="menu" ><i class="fas fa-bars"></i></label>
+        <div class="menu-content">
+            <ul>
+                <a href="om.html">Om</a>
+                <a href="om.html"> | </a>
+                <a href="works.html">Arbeid</a>
+                <a href="om.html"> | </a>
+                <a href="utstillinger.html">Utstillinger</a>
+            </ul>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>
