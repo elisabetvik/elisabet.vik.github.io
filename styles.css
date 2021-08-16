@@ -19,14 +19,12 @@ body {
     padding-top: 50px;
 }
 
-.omtekst {
+.om_tekst {
     font-family: "Andale Mono";
     font-size: 20px;
-    margin: 0 25% 10% 25%;
-    width: 40%;
 }
 
-.omtekst h3 {
+.om_tekst h3 {
     margin-top: 10%;
 }
 
