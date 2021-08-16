@@ -3,11 +3,11 @@
 body {
     font-family:"Andale Mono";
     margin: 0;
-    background-color: gray;
+    background-color: #49796b;
 }
  /* Header */
 .header {
-    background-color: RGB(194, 172, 151, 0.55);
+    background-color: #96c8a2;
     font-size: 100%;
     font-family: "Andale Mono";
 }
@@ -91,6 +91,12 @@ a {
 p {
     margin: 5px;
     font-size: 25px;
+}
+
+.framside_tekst {
+    margin: 15px 0 0 10px;
+    font-family: "Futura";
+    color: #0A0A0A;
 }
 
 .menu-content {
