@@ -3,7 +3,7 @@
 body {
     font-family:"Andale Mono";
     margin: 0;
-    background-color: #707070;
+    background-color: #f5f1e5;
 }
  /* Header */
 .header {
@@ -11,6 +11,7 @@ body {
     font-size: 100%;
     font-family: "Andale Mono";
 }
+
 
 .bilete_tekst {
     font-family: "Andale Mono";
@@ -70,9 +71,19 @@ body {
     .col-12 {width: 100%;}
 }
 
+h1 {
+    font-size: 150px;
+    font-family: Baskerville;
+    font-weight: lighter;
+    color: #523C00;
+}
+
 h6 {
-    font-size: 200%;
-    font-weight: normal;
+    font-family: Baskerville;
+    font-weight: lighter;
+    font-size: 64px;
+    color: #F5F1E5;
+    display: inline;
 }
 
 a {
@@ -85,9 +96,7 @@ p {
 }
 
 .framside_tekst {
-    margin: 15px 0 0 10px;
-    font-family: "Futura";
-    color: #0A0A0A;
+
 }
 
 .menu-content {
