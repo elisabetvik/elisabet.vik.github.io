@@ -1,46 +1,27 @@
-*{ margin: 0;}
+*{ margin: 0;
+    box-sizing: border-box;
+}
 
 body {
-    font-family:"Andale Mono";
+    font-family:"Baskerville";
     margin: 0;
     background-color: #f5f1e5;
 }
  /* Header */
 .header {
-    /* background-color: #96c8a2; */
-    font-size: 100%;
-    font-family: "Andale Mono";
+    font-size: 150px;
+    font-family: "Baskerville";
+    color: #523C00;
+    position: absolute;
+    padding: 1%;
 }
 
-
-.bilete_tekst {
-    font-family: "Andale Mono";
-    font-size: 40px;
-    /* text-align: center; */
-    padding-top: 50px;
-}
 
 .om_tekst {
     font-family: "Andale Mono";
     font-size: 20px;
 }
 
-.om_tekst h3 {
-    margin-top: 10%;
-}
-
-a {
-    text-decoration: inherit;
-    color: RGB(10, 10, 10);
-}
-
-body {
-    font-family: Trebuchet MS;
-}
-
-* {
-    box-sizing: border-box;
-}
 
 .row::after {
     content: "";
@@ -72,7 +53,14 @@ body {
 }
 
 h1 {
-    font-size: 150px;
+    font-size: 8vw;
+    font-family: Baskerville;
+    font-weight: lighter;
+    color: #523C00;
+}
+
+h2 {
+    font-size: 32px;
     font-family: Baskerville;
     font-weight: lighter;
     color: #523C00;
@@ -88,11 +76,18 @@ h6 {
 
 a {
     color: inherit;
+    text-decoration: inherit;
 }
 
 p {
-    margin: 5px;
-    font-size: 25px;
+    font-size: 24px;
+    font-family: Baskerville;
+    font-weight: lighter;
+    color: #523C00;
+}
+
+.verkenamn {
+    display: none;
 }
 
 .framside_tekst {
@@ -101,7 +96,8 @@ p {
 
 .menu-content {
     max-height: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: none;
     width: 100%;
 }
 .collapsible-menu {
@@ -112,7 +108,7 @@ p {
     padding: 0;
 }
 .collapsible-menu a {
-    display:block;
+    display: block;
     text-decoration: none;
     font-size: 30px;
     padding: 10px;
@@ -129,81 +125,5 @@ input#menu {
 }
 input:checked ~ .menu-content {
     max-height: 100%;
+    display: block;
 }
-
-
-@media only screen and (min-width: 1000px) {
-    .menu-content {
-        max-height: 100%;
-        overflow: auto;
-        padding: 0;
-    }
-    .collapsible-menu {
-        display: flex;
-        border-bottom: none;
-        box-shadow: none;
-        padding: 2% 0 0 0;
-    }
-    .collapsible-menu ul {
-        list-style-type: none;
-        padding: 0;
-        display: inline-flex;        
-    }
-    .collapsible-menu a {
-        font-size: 35px;
-        text-decoration: none;
-        padding: 10px;
-    }
-    .collapsible-menu label {
-        display: none;
-    }
-}
-/* Containter for the grid */
-.bilete_row {
-    display: flex; 
-    justify-content: space-between;
-}
-
- /* The grid: Four equal columns that floats next to each other */
- .column {
-    float: left;
-    width: 15%;
-  }
-  
-  /* Style the images inside the grid */
-  .column img {
-    opacity: 0.8;
-    cursor: pointer;
-  }
-  
-  .column img:hover {
-    opacity: 1;
-  }
-  
-  /* The expanding image container (positioning is needed to position the close button and the text) */
-  .container {
-    position: relative;
-    display: none;
-  }
-  
-  /* Closable button inside the image */
-  .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: orange;
-    font-size: 35px;
-    cursor: pointer;
-    border-radius: 100%;
-  } 
-
-/* Expanding image text */
-#imgtext {
-    position: absolute;
-    background-color: RGB(10, 10, 10, 0.3);
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-  }
-  
