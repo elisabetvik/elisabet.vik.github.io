@@ -84,6 +84,7 @@ p {
     font-family: Baskerville;
     font-weight: lighter;
     color: #523C00;
+    display: none;
 }
 
 .verkenamn {
